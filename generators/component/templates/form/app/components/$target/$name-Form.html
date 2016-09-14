@@ -22,6 +22,7 @@
                                 <span ng-show="<%=name%>Form.<%=key%>.$invalid && <%=name%>Form.<%=key%>.$dirty" class="form-control-feedback ng-scope glyphicon glyphicon-remove"></span>
                                 <span class="text-danger" ng-show="<%=name%>Form.<%=key%>.$error.required"><%=key%> is required.</span>
                                 <% } %>
+                    </div>
                 </div>
                 <% } else if (type=='string' && (fields[key].format=='date-time' || fields[key].format=='date' )) { %>
                     <div class="form-group" ng-class="{'has-success has-feedback': <%=name%>Form.<%=key%>.$valid && <%=name%>Form.<%=key%>.$dirty, 'has-error has-feedback': <%=name%>Form.<%=key%>.$invalid && <%=name%>Form.<%=key%>.$dirty}">
